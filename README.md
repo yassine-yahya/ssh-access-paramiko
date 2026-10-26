@@ -1,18 +1,18 @@
-🚀 SSH Connection Script (Python + Paramiko)
+# 🚀 SSH Connection Script (Python + Paramiko)
 This script automates SSH connections using Paramiko and handles common SSH errors gracefully.
 
 
-🔹 Features
+## 🔹 Features
 ✅ Connects to an SSH server using a hostname, username, and password
 ✅ Runs basic commands (e.g., whoami) after login
 ✅ Handles errors properly (wrong credentials, SSH disabled, timeout issues)
 ✅ Color-coded output using Colorama for better readability
 
-🔹 Installation
+## 🔹 Installation
 First, install the required libraries:
 
 pip install paramiko colorama
-🔹 Usage
+## 🔹 Usage
 Run the script and enter your hostname, username, and password when prompted:
 
 python ssh_access.py
@@ -28,12 +28,12 @@ Example successful output:
 🔄 [*] Connecting to test.rebex.net...
 ✅ [+] ***** Connected to test.rebex.net *****
 🖥️ > whoami:
-demo
+## demo
 🔌 [+] Connection closed.
 🔹 Error Handling
 This script provides clear error messages if something goes wrong:
 
-Error	Message
+## Error	Message
 Wrong password	❌ Authentication failed. Wrong username or password.
 SSH disabled	🚫 Unable to connect. SSH might be disabled or port closed.
 Timeout	⏳ Connection Timeout. SSH might be blocked.
